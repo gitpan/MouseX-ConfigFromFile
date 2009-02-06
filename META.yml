@@ -18,9 +18,9 @@ no_index:
     - t
 requires:
   Filter::Util::Call: 0
-  Mouse: 0.14
-  MouseX::Types::Path::Class: 0
+  Mouse: 0.15
+  MouseX::Types::Path::Class: 0.03
   perl: 5.8.1
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.01
+version: 0.02
