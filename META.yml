@@ -3,10 +3,11 @@ abstract: 'An abstract Mouse role for setting attributes from a configfile'
 author:
   - 'NAKAGAWA Masaki <masaki@cpan.org>'
 build_requires:
+  Any::Moose: 0.05
   Test::More: 0
-  ok: 0
+  Test::UseAllModules: 0
 distribution_type: module
-generated_by: 'Module::Install version 0.77'
+generated_by: 'Module::Install version 0.79'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -18,9 +19,10 @@ no_index:
     - t
 requires:
   Filter::Util::Call: 0
-  Mouse: 0.15
-  MouseX::Types::Path::Class: 0.03
+  Mouse: 0.19
+  Mouse::Role: 0
+  MouseX::Types::Path::Class: 0.05
   perl: 5.8.1
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.02
+version: 0.03
