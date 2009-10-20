@@ -1,4 +1,4 @@
-use Test::More tests => 4;
+use Test::More;
 
 do {
     package MyApp;
@@ -16,12 +16,15 @@ do {
     }
 };
 
+my $file = '/pato/to/myapp.conf';
 my $app = MyApp->new_with_config(
     name       => 'MyApp',
-    configfile => '/path/to/myapp.conf',
+    configfile => $file,
 );
 
-is $app->configfile => '/path/to/myapp.conf', 'configfile ok';
+is $app->configfile => $file, 'configfile ok';
 is $app->host => 'localhost', 'get_config_from_file ok';
 is $app->port => 3000, 'get_config_from_file ok';
 is $app->name => 'MyApp', 'extra params ok';
+
+done_testing;

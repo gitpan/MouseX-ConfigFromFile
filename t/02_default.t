@@ -1,4 +1,4 @@
-use Test::More tests => 8;
+use Test::More;
 
 do {
     package MyApp::DefaultStr;
@@ -42,3 +42,5 @@ for my $class (qw/MyApp::DefaultStr MyApp::DefaultSub/) {
     is $app->port => 3000, 'get_config_from_file ok';
     is $app->name => 'MyApp', 'extra params ok';
 }
+
+done_testing;
