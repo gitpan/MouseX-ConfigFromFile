@@ -13,6 +13,7 @@ inc/Module/Install/ReadmeMarkdownFromPod.pm
 inc/Module/Install/Repository.pm
 inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
+inc/Pod/Markdown.pm
 inc/Test/UseAllModules.pm
 lib/MouseX/ConfigFromFile.pm
 Makefile.PL
